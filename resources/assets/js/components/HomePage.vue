@@ -1,9 +1,11 @@
 <template>
-    <mission-section></mission-section>
+    <section>
+        <mission-section></mission-section>
+    </section>
 </template>
 
 <script>
-import MissionSection from "./home/MissionSection.vue";
+import MissionSection from "../home-page-sections/MissionSection.vue";
 
 export default {
     name: "HomePage",

@@ -42,6 +42,10 @@ export default {
         font-family: "Roboto", Sans-serif;
         font-size: 119px;
         font-weight: 600;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 80px;
+        }
     }
 
     .banner-subtitle {
