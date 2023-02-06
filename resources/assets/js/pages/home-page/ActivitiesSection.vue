@@ -7,7 +7,7 @@
             <div class="grid-container flex flex-row justify-center items-center m-auto">
                 <div class="card-container grow">
                     <div class="card-wrapper overflow-hidden">
-                        <img src="../../images/activities/img-1.jpg" alt="Sunset in the mountains">
+                        <img src="../../../images/activities/img-1.jpg" alt="Sunset in the mountains">
                         <div class="card-title">
                             <a href="">
                                 <div class="text-sm mb-2">Sollicitatietraining</div>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="card-container grow">
                     <div class="card-wrapper overflow-hidden">
-                        <img src="../../images/activities/img-2.jpg" alt="Sunset in the mountains">
+                        <img src="../../../images/activities/img-2.jpg" alt="Sunset in the mountains">
                         <div class="card-title">
                             <a href="">
                                 <div class="text-sm mb-2">EVC training: <br>(Bewustwordingscompetentietraining)</div>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="card-container grow">
                     <div class="card-wrapper overflow-hidden">
-                        <img src="../../images/activities/img-3.jpg" alt="Sunset in the mountains">
+                        <img src="../../../images/activities/img-3.jpg" alt="Sunset in the mountains">
                         <div class="card-title">
                             <a href="">
                                 <div class="text-sm mb-2">Pre-EVC training: Sta in je Kracht! Spreek je uit!</div>
@@ -39,7 +39,7 @@
             <div class="grid-container flex flex-row justify-center items-center m-auto pt-3">
                 <div class="card-container grow">
                     <div class="card-wrapper overflow-hidden">
-                        <img src="../../images/activities/img-4.jpg" alt="Sunset in the mountains">
+                        <img src="../../../images/activities/img-4.jpg" alt="Sunset in the mountains">
                         <div class="card-title">
                             <a href="">
                                 <div class="text-sm mb-2">Computercursus</div>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="card-container grow">
                     <div class="card-wrapper overflow-hidden">
-                        <img src="../../images/activities/img-5.jpg" alt="Sunset in the mountains">
+                        <img src="../../../images/activities/img-5.jpg" alt="Sunset in the mountains">
                         <div class="card-title">
                             <a href="">
                                 <div class="text-sm mb-2">Conversatielessen Nederlands</div>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="card-container grow">
                     <div class="card-wrapper overflow-hidden">
-                        <img src="../../images/activities/img-6.jpg" alt="Sunset in the mountains">
+                        <img src="../../../images/activities/img-6.jpg" alt="Sunset in the mountains">
                         <div class="card-title">
                             <a href="">
                                 <div class="text-sm mb-2">Interculturele ontmoetingsbijeenkomst</div>
@@ -67,6 +67,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div  class="more-activities flex flex-row justify-center items-center mt-10">
+                <a href="">Klik hier voor meer activiteiten en schrijf je in!</a>
             </div>
         </div>
     </section>
@@ -121,6 +125,18 @@ export default {
             }
             @media only screen and (max-width: 800px) {
                 flex-wrap: wrap;
+            }
+        }
+
+        .more-activities {
+            a {
+                font-family: "Roboto", Sans-serif;
+                font-weight: normal;
+                background-color: #AE5D65;
+                padding: 15px;
+                font-size: 16px;
+                color: #fff;
+                border-radius: 4px;
             }
         }
     }

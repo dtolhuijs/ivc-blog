@@ -2,7 +2,7 @@
     <section>
         <div class="mission-section">
             <div class="flex justify-center items-center">
-                <img src="../../images/marlies-150x150.jpg" alt="Marlies Pfann">
+                <img src="../../../images/marlies-150x150.jpg" alt="Marlies Pfann">
             </div>
             <div class="flex justify-center items-center">
                 <p class="mission-text">

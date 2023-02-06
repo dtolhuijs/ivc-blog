@@ -11,7 +11,7 @@
         <link rel="apple-touch-icon" href="https://ivcdenhelder.nl/wp-content/uploads/2019/01/cropped-logo_klein-180x180.png" />
         <meta name="msapplication-TileImage" content="https://ivcdenhelder.nl/wp-content/uploads/2019/01/cropped-logo_klein-270x270.png" />
 
-        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="js/tailwind.min.js"></script>
 
         <title>Internationaal Vrouwen Centrum</title>
 
@@ -19,8 +19,7 @@
     </head>
     <body>
         <div id="app">
-            <header-section></header-section>
-            <home-section></home-section>
+            <app/>
         </div>
 
         <script src="{{ mix('js/app.js') }}"></script>
