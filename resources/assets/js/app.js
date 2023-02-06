@@ -16,8 +16,9 @@ require('./bootstrap');
 Vue.component('header-section', require('./components/HeaderSection.vue'));
 Vue.component('banner-image', require('./components/BannerImage.vue'));
 
-Vue.component('mission-section', require('./home-page-sections/MissionSection.vue'));
 Vue.component('home-section', require('./components/HomePage.vue'));
+Vue.component('mission-section', require('./home-page-sections/MissionSection.vue'));
+Vue.component('activities-section', require('./home-page-sections/ActivitiesSection.vue'));
 
 const app = new Vue({
     el: '#app'

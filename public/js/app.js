@@ -2615,8 +2615,9 @@ __webpack_require__(25);
 Vue.component('header-section', __webpack_require__(62));
 Vue.component('banner-image', __webpack_require__(19));
 
-Vue.component('mission-section', __webpack_require__(90));
 Vue.component('home-section', __webpack_require__(78));
+Vue.component('mission-section', __webpack_require__(90));
+Vue.component('activities-section', __webpack_require__(95));
 
 var app = new Vue({
   el: '#app'
@@ -36592,18 +36593,22 @@ module.exports = Component.exports
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_page_sections_MissionSection_vue__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_page_sections_MissionSection_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__home_page_sections_MissionSection_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_page_sections_ActivitiesSection_vue__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_page_sections_ActivitiesSection_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__home_page_sections_ActivitiesSection_vue__);
 //
 //
 //
 //
 //
 //
+//
+
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "HomePage",
-    components: { MissionSection: __WEBPACK_IMPORTED_MODULE_0__home_page_sections_MissionSection_vue___default.a }
+    components: { MissionSection: __WEBPACK_IMPORTED_MODULE_0__home_page_sections_MissionSection_vue___default.a, ActivitiesSection: __WEBPACK_IMPORTED_MODULE_1__home_page_sections_ActivitiesSection_vue___default.a }
 });
 
 /***/ }),
@@ -36614,7 +36619,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", [_c("mission-section")], 1)
+  return _c(
+    "section",
+    [_c("mission-section"), _vm._v(" "), _c("activities-section")],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -36870,6 +36879,390 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-e6074bf0", module.exports)
   }
 }
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(98)
+}
+var normalizeComponent = __webpack_require__(7)
+/* script */
+var __vue_script__ = __webpack_require__(96)
+/* template */
+var __vue_template__ = __webpack_require__(100)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-320a3139"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/home-page-sections/ActivitiesSection.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-320a3139", Component.options)
+  } else {
+    hotAPI.reload("data-v-320a3139", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 96 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "ActivitiesSection"
+});
+
+/***/ }),
+/* 97 */,
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(99);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(21)("ce5c1b32", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-320a3139\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ActivitiesSection.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-320a3139\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ActivitiesSection.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(20)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.activities-section[data-v-320a3139] {\n  margin-top: 50px;\n  margin-bottom: 50px;\n  padding: 0 0 50px 0;\n}\n.activities-section .activities-title[data-v-320a3139] {\n    margin: 50px 50px 50px 50px;\n    padding: 0;\n    font-size: 2rem;\n    font-family: \"Public Sans\", Sans-serif;\n}\n.activities-section .grid-container[data-v-320a3139] {\n    max-width: 1140px;\n    gap: 12px;\n}\n.activities-section .grid-container .card-container[data-v-320a3139] {\n      position: relative;\n}\n.activities-section .grid-container .card-container .card-wrapper[data-v-320a3139] {\n        -webkit-box-pack: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n}\n.activities-section .grid-container .card-container .card-wrapper img[data-v-320a3139] {\n          width: 400px;\n          height: 300px;\n          -o-object-fit: cover;\n             object-fit: cover;\n}\n.activities-section .grid-container .card-container .card-wrapper .card-title[data-v-320a3139] {\n          position: absolute;\n          width: 80%;\n          bottom: 50px;\n          text-align: center;\n          margin: 125px 0px 0px 0px;\n          padding: 15px 15px 5px 15px;\n          background-color: #fff;\n          opacity: .8;\n}\n@media only screen and (max-width: 800px) {\n.activities-section .grid-container[data-v-320a3139] {\n        -ms-flex-wrap: wrap;\n            flex-wrap: wrap;\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", [
+      _c("div", { staticClass: "activities-section" }, [
+        _c("div", { staticClass: "flex justify-center items-center" }, [
+          _c("h2", { staticClass: "activities-title" }, [
+            _vm._v("Activiteiten")
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "grid-container flex flex-row justify-center items-center m-auto"
+          },
+          [
+            _c("div", { staticClass: "card-container grow" }, [
+              _c("div", { staticClass: "card-wrapper overflow-hidden" }, [
+                _c("img", {
+                  attrs: {
+                    src: __webpack_require__(101),
+                    alt: "Sunset in the mountains"
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-title" }, [
+                  _c("a", { attrs: { href: "" } }, [
+                    _c("div", { staticClass: "text-sm mb-2" }, [
+                      _vm._v("Sollicitatietraining")
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-container grow" }, [
+              _c("div", { staticClass: "card-wrapper overflow-hidden" }, [
+                _c("img", {
+                  attrs: {
+                    src: __webpack_require__(102),
+                    alt: "Sunset in the mountains"
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-title" }, [
+                  _c("a", { attrs: { href: "" } }, [
+                    _c("div", { staticClass: "text-sm mb-2" }, [
+                      _vm._v("EVC training: "),
+                      _c("br"),
+                      _vm._v("(Bewustwordingscompetentietraining)")
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-container grow" }, [
+              _c("div", { staticClass: "card-wrapper overflow-hidden" }, [
+                _c("img", {
+                  attrs: {
+                    src: __webpack_require__(103),
+                    alt: "Sunset in the mountains"
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-title" }, [
+                  _c("a", { attrs: { href: "" } }, [
+                    _c("div", { staticClass: "text-sm mb-2" }, [
+                      _vm._v(
+                        "Pre-EVC training: Sta in je Kracht! Spreek je uit!"
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "grid-container flex flex-row justify-center items-center m-auto pt-3"
+          },
+          [
+            _c("div", { staticClass: "card-container grow" }, [
+              _c("div", { staticClass: "card-wrapper overflow-hidden" }, [
+                _c("img", {
+                  attrs: {
+                    src: __webpack_require__(104),
+                    alt: "Sunset in the mountains"
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-title" }, [
+                  _c("a", { attrs: { href: "" } }, [
+                    _c("div", { staticClass: "text-sm mb-2" }, [
+                      _vm._v("Computercursus")
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-container grow" }, [
+              _c("div", { staticClass: "card-wrapper overflow-hidden" }, [
+                _c("img", {
+                  attrs: {
+                    src: __webpack_require__(105),
+                    alt: "Sunset in the mountains"
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-title" }, [
+                  _c("a", { attrs: { href: "" } }, [
+                    _c("div", { staticClass: "text-sm mb-2" }, [
+                      _vm._v("Conversatielessen Nederlands")
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-container grow" }, [
+              _c("div", { staticClass: "card-wrapper overflow-hidden" }, [
+                _c("img", {
+                  attrs: {
+                    src: __webpack_require__(106),
+                    alt: "Sunset in the mountains"
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-title" }, [
+                  _c("a", { attrs: { href: "" } }, [
+                    _c("div", { staticClass: "text-sm mb-2" }, [
+                      _vm._v("Interculturele ontmoetingsbijeenkomst")
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-320a3139", module.exports)
+  }
+}
+
+/***/ }),
+/* 101 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/img-1.jpg?5c75f17d650450ec06bf3f879e4cbd91";
+
+/***/ }),
+/* 102 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/img-2.jpg?b9b905805e857ee7c2a9ca33c417bdab";
+
+/***/ }),
+/* 103 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/img-3.jpg?e6b0c4444f1b4f70a65897aad2387ec3";
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/img-4.jpg?e45a3a90900161abf8c39409f3313dee";
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/img-5.jpg?f6ce076a70a008333dd0460bfc028ead";
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/img-6.jpg?fc26e8a8004be3c9e72814b83d829996";
 
 /***/ })
 /******/ ]);
