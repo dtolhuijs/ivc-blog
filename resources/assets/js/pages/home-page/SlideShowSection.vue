@@ -1,63 +1,223 @@
 <template>
-    <section>
-        <div class="slideshow-section">
-
-            <div id="indicators-carousel" class="relative" data-carousel="static">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="../../../images/activities/img-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../../../images/activities/img-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../../../images/activities/img-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../../../images/activities/img-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 5 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../../../images/activities/img-5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                </div>
-                <!-- Slider indicators -->
-                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-                </div>
-                <!-- Slider controls -->
-                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-            <span class="sr-only">Previous</span>
-        </span>
-                </button>
-                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            <span class="sr-only">Next</span>
-        </span>
-                </button>
-            </div>
-
+    <div class="slider-section">
+        <div class="flex justify-center items-center">
+            <h2 class="testimonies-title">Zij gingen jou voor:</h2>
         </div>
-    </section>
+        <VueSlickCarousel v-bind="settings" ref="carousel">
+            <div class="h-auto text-dark text-center text-4xl p-6">
+               <img class="slide-img" src="../../../images/slider/ashley.png" alt="Ashley image">
+                <p class="slider-text">
+                    "Een paar jaar geleden kwam ik na een burn-out bij het IVC terecht als vrijwilliger.
+                    Bij het IVC kon ik op eigen tempo en met mijn eigen kwaliteiten een bijdrage leveren aan het PR team.
+                    Inmiddels werk ik weer (bijna) fulltime in de non-profit sector en doe ik daarnaast nog steeds
+                    vrijwilligerswerk voor het IVC (waaronder het maken van deze website!)."
+                </p>
+                <div class="slider-subtitles">
+                    <p class="name">Ashley</p>
+                    <p class="position">Vrijwilliger</p>
+                </div>
+            </div>
+            <div class="h-auto text-dark text-center text-4xl p-6">
+                <img class="slide-img" src="../../../images/slider/Anneke.png" alt="Anneke image">
+                <p class="slider-text">
+                    "Ik ben hier bij het IVC gekomen toen ik mijn baan kwijtraakte als marinebioloog.
+                    Ik heb deelgenomen aan activiteiten, vrijwilligerswerk en de competentietraining,
+                    die mij allemaal inzicht gaven in mijn kwaliteiten en wat ik leuk vond. Uiteindelijk heb ik weer
+                    een nieuwe baan gevonden."
+                </p>
+                <div class="slider-subtitles">
+                    <p class="name">Anneke</p>
+                    <p class="position">Deelnemer</p>
+                </div>
+            </div>
+            <div class="h-auto text-dark text-center text-4xl p-6">
+                <img class="slide-img" src="../../../images/slider/Niela.png" alt="Niela image">
+                <p class="slider-text">
+                    "Ook ik deed mee aan de empowerment training op het IVC en ik deed vrijwilligerswerk als begeleider
+                    bij de ontmoetingsbijeenkomst. Ik vond het moeilijk om een betaalde baan te vinden.
+                    Dankzij de training "Klaar voor de Start" is het mij gelukt om te ontdekken wat de beer op
+                    de weg was en deze te overwinnen. Nu werk ik met veel plezier in een supermarkt en ben ik de kostwinner thuis."
+                </p>
+                <div class="slider-subtitles">
+                    <p class="name">Niela</p>
+                    <p class="position">Deelnemer</p>
+                </div>
+            </div>
+            <div class="h-auto text-dark text-center text-4xl p-6">
+                <img class="slide-img" src="../../../images/slider/Jacky.png" alt="Jacky image">
+                <p class="slider-text">
+                    "Ik liep stage bij het IVC voor mijn studie Social Work. Ik kreeg de kans om mij hier te
+                    ontwikkelen als sociaal werker door alle verantwoordelijkheden die ik hier kreeg en ik maakte
+                    kennis met diverse culturen en cultuurelementen. Ik ben warm ontvangen, voelde me op mijn gemak,
+                    en kan daardoor mijn opleiding met succes afronden."
+                </p>
+                <div class="slider-subtitles">
+                    <p class="name">Jacky</p>
+                    <p class="position">Stagiaire</p>
+                </div>
+            </div>
+            <div class="h-auto text-dark text-center text-4xl p-6">
+                <img class="slide-img" src="../../../images/slider/Khadija2.png" alt="Khadija image">
+                <p class="slider-text">
+                    "Ik ben hoogopgeleid in mijn land van herkomst. In Nederland moest ik een nieuwe taal leren.
+                    Dat kan ik hier bij het IVC,  omdat ik vrijwilligerswerk doe en zo met veel mensen in contact kom.
+                    Ik voel me erg gewaardeerd en ik vind het heel leuk."
+                </p>
+                <div class="slider-subtitles">
+                    <p class="name">Khadija</p>
+                    <p class="position">Deelnemer</p>
+                </div>
+            </div>
+            <div class="h-auto text-dark text-center text-4xl p-6">
+                <img class="slide-img" src="../../../images/slider/Varduhi.png" alt="Varduhi image">
+                <p class="slider-text">
+                    "Wat betekent het IVC voor mij? Dat is heel veel. Omdat ik mezelf kan ontwikkelen door deel
+                    te nemen aan het managementteam en het volgen van trainingen. Daardoor heb ik mijn juridische
+                    kant ontwikkeld."
+                </p>
+                <div class="slider-subtitles">
+                    <p class="name">Varduhi</p>
+                    <p class="position">Deelnemer</p>
+                </div>
+            </div>
+            <div class="h-auto text-dark text-center text-4xl p-6">
+                <img class="slide-img" src="../../../images/slider/marlies.jpg" alt="Marlies image">
+                <p class="slider-text">
+                    "We hebben alle vrouwen iets te bieden. We zijn er voor autochtone en allochtone vrouwen.
+                    Voor jonge vrouwen en oudere vrouwen. Voor vrouwen zonder opleiding tot en met universitair
+                    opgeleid. Het is onze missie álle vrouwen te empoweren naar financiële onafhankelijkheid en
+                    sociale zelfredzaamheid."
+                </p>
+                <div class="slider-subtitles">
+                    <p class="name">Marlies</p>
+                    <p class="position">Directeur</p>
+                </div>
+            </div>
+        </VueSlickCarousel>
+    </div>
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
 export default {
-    name: "SlideShowSection",
+    name: 'Slider',
+    components: { VueSlickCarousel },
+    data() {
+        return {
+            arrows: false /* 矢印の監視用 */,
+            settings: {
+                autoplay: true,
+                autoplaySpeed: 5000,
+                pauseOnFocus: true,
+                pauseOnHover: false,
+                arrows: true,
+                edgeFriction: 0.35,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        "breakpoint": 1024,
+                        "settings": {
+                            "slidesToShow": 3,
+                            "slidesToScroll": 3,
+                            "infinite": true,
+                            "dots": true
+                        }
+                    },
+                    {
+                        "breakpoint": 600,
+                        "settings": {
+                            "slidesToShow": 2,
+                            "slidesToScroll": 2,
+                            "initialSlide": 2
+                        }
+                    },
+                    {
+                        "breakpoint": 480,
+                        "settings": {
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1
+                        }
+                    }
+                ]
+            },
+        };
+    },
+    mounted() {
+        const elements = document.getElementsByClassName("slick-arrow");
+        Array.from(elements).forEach((element) => {
+            element.addEventListener("click", function (e) {
+                const sliderElement = document.getElementsByClassName("slick-slide");
+                if (sliderElement.length > 0) {
+                    sliderElement[0].focus();
+                }
+            });
+            element.addEventListener("mouseover", function (e) {
+                const sliderElement = document.getElementsByClassName("slick-slide");
+                if (sliderElement.length > 0) {
+                    sliderElement[0].focus();
+                }
+            });
+            element.addEventListener("mouseleave", function (e) {
+                const sliderElement = document.getElementsByClassName("slick-slide");
+                if (sliderElement.length > 0) {
+                    sliderElement[0].blur();
+                }
+            });
+        });
+    },
 }
 </script>
 
 <style lang="scss" scoped>
+    .slider-section {
+        padding: 0 0 50px 0;
+        max-width: 1140px;
+        margin: 0 auto;
+
+        .testimonies-title {
+            margin: 0 50px 50px 50px;
+            padding: 0;
+            font-size: 2rem;
+            font-family: "Public Sans", Sans-serif;
+        }
+
+        .slide-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 100px;
+            margin: 0 auto;
+        }
+        .slider-text {
+            font-family: "Public Sans", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5rem;
+            margin-top: 25px;
+            color: #7A7A7A;
+            font-style: italic;
+        }
+
+        .slider-subtitles {
+            margin-top: 25px;
+            font-size: 1rem;
+            font-family: "Public Sans", Sans-serif;
+            font-style: italic;
+            color: #000000;
+
+            .name {
+                font-weight: 700;
+            }
+            .position {
+                font-weight: 400;
+                margin-top: -16px;
+            }
+        }
+    }
 </style>
