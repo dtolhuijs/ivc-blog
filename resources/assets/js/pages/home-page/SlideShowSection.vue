@@ -118,14 +118,15 @@ export default {
                 edgeFriction: 0.35,
                 infinite: true,
                 speed: 500,
+                dots: true,
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 responsive: [
                     {
                         "breakpoint": 1024,
                         "settings": {
-                            "slidesToShow": 3,
-                            "slidesToScroll": 3,
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
                             "infinite": true,
                             "dots": true
                         }
@@ -133,16 +134,18 @@ export default {
                     {
                         "breakpoint": 600,
                         "settings": {
-                            "slidesToShow": 2,
-                            "slidesToScroll": 2,
-                            "initialSlide": 2
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
+                            "initialSlide": 1,
+                            "dots": true
                         }
                     },
                     {
                         "breakpoint": 480,
                         "settings": {
                             "slidesToShow": 1,
-                            "slidesToScroll": 1
+                            "slidesToScroll": 1,
+                            "dots": true
                         }
                     }
                 ]
