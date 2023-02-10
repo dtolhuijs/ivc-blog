@@ -108,7 +108,7 @@ export default {
     components: { VueSlickCarousel },
     data() {
         return {
-            arrows: false /* 矢印の監視用 */,
+            arrows: false,
             settings: {
                 autoplay: true,
                 autoplaySpeed: 5000,
