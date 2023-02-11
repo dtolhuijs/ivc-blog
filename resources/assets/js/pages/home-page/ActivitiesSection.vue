@@ -126,6 +126,10 @@ export default {
             @media only screen and (max-width: 800px) {
                 flex-wrap: wrap;
             }
+            @media only screen and (max-width: 1166px) {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
         }
 
         .more-activities {
