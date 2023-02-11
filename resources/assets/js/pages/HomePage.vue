@@ -5,6 +5,7 @@
         <slide-show-section/>
         <participation-section/>
         <sign-up-section/>
+        <counter-section/>
     </section>
 </template>
 
@@ -14,11 +15,13 @@ import ActivitiesSection from "./home-page/ActivitiesSection.vue";
 import SlideShowSection from "./home-page/SlideShowSection.vue";
 import ParticipationSection from "./home-page/ParticipationSection.vue";
 import SignUpSection from "./home-page/SignUpSection.vue";
+import CounterSection from "./home-page/CounterSection.vue";
 
 export default {
     name: "HomePage",
 
     components: {
+        CounterSection,
         SignUpSection,
         ParticipationSection,
         MissionSection,
