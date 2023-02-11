@@ -55,7 +55,7 @@
             </div>
 
             <div class="site-footer">
-                <div class="copy-right">© Internationaal Vrouwen Centrum Den Helder {{ currYear }}</div>
+                <div class="copy-right">© Internationaal Vrouwen Centrum Den Helder {{ currentYear }}</div>
             </div>
         </footer>
     </section>
@@ -72,7 +72,7 @@ export default {
 
     data() {
         return {
-            currYear: new Date().getFullYear(),
+            currentYear: new Date().getFullYear(),
         };
     },
 }
