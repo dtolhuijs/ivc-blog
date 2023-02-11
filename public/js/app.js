@@ -36320,6 +36320,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_HomePage_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__pages_HomePage_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_HeaderSection_vue__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_HeaderSection_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_HeaderSection_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Footer_vue__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Footer_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_Footer_vue__);
 //
 //
 //
@@ -36327,6 +36329,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+
 
 
 
@@ -36335,7 +36339,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     components: {
         HeaderSection: __WEBPACK_IMPORTED_MODULE_1__components_HeaderSection_vue___default.a,
-        HomePage: __WEBPACK_IMPORTED_MODULE_0__pages_HomePage_vue___default.a
+        HomePage: __WEBPACK_IMPORTED_MODULE_0__pages_HomePage_vue___default.a,
+        FooterSection: __WEBPACK_IMPORTED_MODULE_2__components_Footer_vue___default.a
     }
 });
 
@@ -50344,7 +50349,17 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", [_c("header-section"), _vm._v(" "), _c("home-page")], 1)
+  return _c(
+    "section",
+    [
+      _c("header-section"),
+      _vm._v(" "),
+      _c("home-page"),
+      _vm._v(" "),
+      _c("footer-section")
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -57240,6 +57255,426 @@ module.exports = "/images/eucom.png?ec3ce73d1b989a50f2a20e3ae4d31b9d";
 /***/ (function(module, exports) {
 
 module.exports = "/images/eaea.png?3cf7a14e2a29bde0ff0e50a76b1ce8f8";
+
+/***/ }),
+/* 164 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(175)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(165)
+/* template */
+var __vue_template__ = __webpack_require__(166)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/Footer.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-083ff5dc", Component.options)
+  } else {
+    hotAPI.reload("data-v-083ff5dc", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 165 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__NewsLetterSection_vue__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__NewsLetterSection_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__NewsLetterSection_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "FooterSection",
+    components: {
+        NewsLetterSection: __WEBPACK_IMPORTED_MODULE_0__NewsLetterSection_vue___default.a
+    },
+
+    data: function data() {
+        return {
+            currYear: new Date().getFullYear()
+        };
+    }
+});
+
+/***/ }),
+/* 166 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", [
+    _c("footer", { staticClass: "footer-container" }, [
+      _c(
+        "div",
+        {
+          staticClass: "footer-wrapper flex justify-center items-center m-auto"
+        },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "right-column column" }, [
+            _c(
+              "div",
+              { staticClass: "column-wrapper" },
+              [
+                _c("p", { staticClass: "subscribe-title" }, [
+                  _vm._v("Schrijf je in voor onze nieuwsbrief:")
+                ]),
+                _vm._v(" "),
+                _c("NewsLetterSection"),
+                _vm._v(" "),
+                _c("p", { staticClass: "social-media" }, [
+                  _vm._v("Volg ons op onze socials:")
+                ]),
+                _vm._v(" "),
+                _vm._m(2)
+              ],
+              1
+            )
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "site-footer" }, [
+        _c("div", { staticClass: "copy-right" }, [
+          _vm._v(
+            "© Internationaal Vrouwen Centrum Den Helder " +
+              _vm._s(_vm.currYear)
+          )
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "left-column column" }, [
+      _c("img", {
+        attrs: {
+          src: __webpack_require__(174),
+          alt: "IVC logo"
+        }
+      }),
+      _vm._v(" "),
+      _c("p", [
+        _c("strong", [_vm._v("Internationaal Vrouwen Centrum")]),
+        _c("br"),
+        _vm._v("\n                    IJsselmeerstraat 154"),
+        _c("br"),
+        _vm._v("\n                    1784 MA Den Helder"),
+        _c("br"),
+        _vm._v(
+          "\n                    Telefoon: 0223 – 634216\n                "
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("strong", [_vm._v("Onze openingstijden:")]),
+        _c("br"),
+        _vm._v("\n                    Maandag, dinsdag en donderdag:"),
+        _c("br"),
+        _vm._v("\n                    09:00 – 16.00"),
+        _c("br"),
+        _vm._v("\n                    Woensdag en vrijdag:"),
+        _c("br"),
+        _vm._v("\n                    09.00 – 12.30\n                ")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "middle-column column" }, [
+      _c("a", { attrs: { href: "" } }, [_vm._v("Home")]),
+      _c("br"),
+      _c("br"),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "" } }, [_vm._v("Wie zijn wij")]),
+      _c("br"),
+      _c("br"),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "" } }, [_vm._v("Activiteiten")]),
+      _c("br"),
+      _c("br"),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "" } }, [_vm._v("Actueel")]),
+      _c("br"),
+      _c("br"),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "" } }, [_vm._v("Contact")]),
+      _c("br"),
+      _c("br"),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "" } }, [_vm._v("Privacyverklaring")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "social-icons flex" }, [
+      _c(
+        "a",
+        {
+          attrs: {
+            href: "https://www.facebook.com/IVCDenHelder/",
+            target: "_blank"
+          }
+        },
+        [
+          _c("img", {
+            attrs: {
+              src: __webpack_require__(170),
+              alt: "Facebook logo"
+            }
+          })
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          attrs: {
+            href:
+              "https://www.linkedin.com/company/internationaal-vrouwen-centrum/",
+            target: "_blank"
+          }
+        },
+        [
+          _c("img", {
+            attrs: {
+              src: __webpack_require__(171),
+              alt: "LinkeIn logo"
+            }
+          })
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          attrs: {
+            href: "https://www.instagram.com/ivcdenhelder/",
+            target: "_blank"
+          }
+        },
+        [
+          _c("img", {
+            attrs: {
+              src: __webpack_require__(172),
+              alt: "Instagram logo"
+            }
+          })
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          attrs: {
+            href: "https://www.youtube.com/channel/UCAqmlYAg9bLfFrhr90ifJzw",
+            target: "_blank"
+          }
+        },
+        [
+          _c("img", {
+            attrs: {
+              src: __webpack_require__(173),
+              alt: "Youtube logo"
+            }
+          })
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-083ff5dc", module.exports)
+  }
+}
+
+/***/ }),
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/facebook-3-48.png?82f9064f51061b3d7571f942d10f9ed6";
+
+/***/ }),
+/* 171 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/linkedin-6-48.png?6d0b582de3fa7ecb7c79541403c138f5";
+
+/***/ }),
+/* 172 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/instagram-48.png?ecf036a47501a36dee3c88591c49f508";
+
+/***/ }),
+/* 173 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/youtube.png?bfa496bd31f394a5c105d016f0fa5dbe";
+
+/***/ }),
+/* 174 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/ivc-logo_wit.png?6a4fb70838f8cd8cb4cf341779b924e2";
+
+/***/ }),
+/* 175 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(176);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("2e0d12ed", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-083ff5dc\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Footer.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-083ff5dc\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Footer.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 176 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\nfooter.footer-container {\n  background-color: #AE5D65;\n  margin-top: 0;\n  margin-bottom: 0;\n  padding: 25px 25px 0 25px;\n}\nfooter.footer-container .footer-wrapper {\n    max-width: 1140px;\n    padding-bottom: 25px;\n}\nfooter.footer-container .footer-wrapper .column {\n      width: 33.333%;\n}\nfooter.footer-container .footer-wrapper .column.left-column {\n        color: #FFFBFB;\n        font-family: \"Public Sans\", Sans-serif;\n        font-size: 13px;\n        font-weight: 400;\n        padding: 30px 20px 20px 20px;\n}\nfooter.footer-container .footer-wrapper .column.left-column img, footer.footer-container .footer-wrapper .column.left-column p {\n          margin-bottom: 0.9rem;\n}\nfooter.footer-container .footer-wrapper .column.middle-column {\n        text-align: left;\n        color: #FFFFFF;\n        font-family: \"Public Sans\", Sans-serif;\n        padding: 30px 20px 20px 20px;\n}\nfooter.footer-container .footer-wrapper .column.right-column {\n        padding: 10px 20px 20px 20px;\n}\nfooter.footer-container .footer-wrapper .column.right-column .column-wrapper .subscribe-title,\n        footer.footer-container .footer-wrapper .column.right-column .column-wrapper .social-media {\n          color: #FFFFFF;\n          font-family: \"Public Sans\", Sans-serif;\n          font-weight: 400;\n          margin-bottom: 20px;\n}\nfooter.footer-container .footer-wrapper .column.right-column .column-wrapper .social-media {\n          padding: 30px 0 0 0;\n}\nfooter.footer-container .footer-wrapper .column.right-column .column-wrapper .newsletter-section .form-fields input {\n          width: 100%;\n          max-width: 100%;\n          border: 1px solid #818a91;\n          background-color: #FFFFFF;\n          border-radius: 3px;\n          color: #373a3c;\n          padding: 0.5rem 1rem;\n          margin-bottom: 10px;\n          vertical-align: middle;\n          -webkit-box-flex: 1;\n          -ms-flex-positive: 1;\n          flex-grow: 1;\n}\nfooter.footer-container .footer-wrapper .column.right-column .column-wrapper .newsletter-section .form-fields button {\n          width: 100%;\n          max-width: 100%;\n          background-color: #fff;\n          color: #000000;\n          font-family: \"Roboto\", Sans-serif;\n          font-weight: 500;\n          font-size: 15px;\n          padding: 12px 24px;\n          border-radius: 3px;\n}\nfooter.footer-container .footer-wrapper .column.right-column .social-icons a img {\n          width: 30px;\n          height: 30px;\n}\nfooter.footer-container .footer-wrapper .column.right-column .social-icons a:not(:last-child) {\n          padding-right: 10px;\n}\n@media only screen and (max-width: 770px) {\nfooter.footer-container .footer-wrapper {\n        -ms-flex-wrap: wrap;\n            flex-wrap: wrap;\n}\nfooter.footer-container .footer-wrapper .column {\n          width: 100%;\n}\n}\nfooter.footer-container .site-footer {\n    padding-top: 1rem;\n    padding-bottom: 1rem;\n    position: relative;\n    background-color: #AE5D65;\n    border-top: solid 1px #e8e8e8;\n    text-align: center;\n}\nfooter.footer-container .site-footer .copy-right {\n      color: #FFFFFF;\n      font-size: 12px;\n      font-family: \"Public Sans\", Sans-serif;\n      font-weight: 100;\n}\n", ""]);
+
+// exports
+
 
 /***/ })
 /******/ ]);
