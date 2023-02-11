@@ -6,6 +6,7 @@
         <participation-section/>
         <sign-up-section/>
         <counter-section/>
+        <partner-section/>
     </section>
 </template>
 
@@ -16,11 +17,13 @@ import SlideShowSection from "./home-page/SlideShowSection.vue";
 import ParticipationSection from "./home-page/ParticipationSection.vue";
 import SignUpSection from "./home-page/SignUpSection.vue";
 import CounterSection from "./home-page/CounterSection.vue";
+import PartnerSection from "./home-page/PartnerSection.vue";
 
 export default {
     name: "HomePage",
 
     components: {
+        PartnerSection,
         CounterSection,
         SignUpSection,
         ParticipationSection,
