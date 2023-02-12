@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import NewsLetterSection from "../../components/NewsLetterSection.vue";
+import NewsLetterSection from "../../Components/NewsLetterSection.vue";
 
 export default {
     components: {
@@ -107,7 +107,7 @@ export default {
                     }
 
                     .form-fields {
-                        
+
                         input {
                             width: 100%;
                             max-width: 100%;

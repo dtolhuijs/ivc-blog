@@ -14,17 +14,15 @@
         <title>Internationaal Vrouwen Centrum</title>
 
         <link rel="stylesheet" href="css/flowbite.min.css" />
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <link rel="stylesheet" href="css/app.css">
         <script src="js/tailwind.min.js"></script>
+        <script defer src="js/flowbite.min.js"></script>
+        <script defer src="js/app.js"></script>
 
+        @inertiaHead
     </head>
+
     <body>
-        <div id="app">
-            <app/>
-        </div>
-
-        <script src="{{ mix('js/app.js') }}"></script>
-        <script src="js/flowbite.min.js"></script>
-
+        @inertia
     </body>
 </html>
