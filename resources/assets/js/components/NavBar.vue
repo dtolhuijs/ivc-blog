@@ -13,7 +13,7 @@
             <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                 <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
                     <li>
-                        <a href="https://ivcdenhelder.nl/" class="block py-2 pl-3 pr-4 md:border-0 md:p-0 hover:underline" aria-current="page">Home</a>
+                        <a href="https://ivcdenhelder.nl/" class="block py-2 pl-3 pr-4 md:border-0 md:p-0" aria-current="page">Home</a>
                     </li>
                     <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium md:hover:bg-transparent md:border-0 md:p-0 md:w-auto">
@@ -23,13 +23,13 @@
                         <dropdown :items="dropdownItems"/>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pl-3 pr-4 md:border-0 md:p-0 hover:underline">Activiteiten</a>
+                        <a href="#" class="block py-2 pl-3 pr-4 md:border-0 md:p-0">Activiteiten</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pl-3 pr-4 md:border-0 md:p-0 hover:underline">Actueel</a>
+                        <a href="#" class="block py-2 pl-3 pr-4 md:border-0 md:p-0">Actueel</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pl-3 pr-4 md:border-0 md:p-0 hover:underline">Contact</a>
+                        <a href="#" class="block py-2 pl-3 pr-4 md:border-0 md:p-0">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -85,6 +85,37 @@ export default {
         width: 100%;
         font-family: "Public Sans", Sans-serif, sans-serif;
         color: #595959;
+
+        #navbar-dropdown {
+
+            a, button {
+
+                position: relative;
+                color: #595959;
+                text-decoration: none;
+
+                &:hover {
+                    color: #595959;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #595959;
+                    transform: scaleX(0);
+                    transition: transform 0.3s ease;
+                }
+
+                &:hover::before {
+                    transform: scaleX(1);
+                }
+            }
+        }
     }
 </style>
 

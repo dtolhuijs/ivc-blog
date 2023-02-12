@@ -110,6 +110,34 @@ footer.footer-container{
                 color: #FFFFFF;
                 font-family: "Public Sans", Sans-serif;
                 padding: 30px 20px 20px 20px;
+
+                a {
+
+                    position: relative;
+                    color: #fff;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #fff;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: #fff;
+                        transform: scaleX(0);
+                        transition: transform 0.3s ease;
+                    }
+
+                    &:hover::before {
+                        transform: scaleX(1);
+                    }
+                }
             }
 
             &.right-column {
@@ -124,12 +152,15 @@ footer.footer-container{
                         font-weight: 400;
                         margin-bottom: 20px;
                     }
+
                     .social-media {
                         padding: 30px 0 0 0;
                     }
 
                     .newsletter-section {
+
                         .form-fields {
+
                             input {
                                 width: 100%;
                                 max-width: 100%;
@@ -155,20 +186,46 @@ footer.footer-container{
                                 font-size: 15px;
                                 padding: 12px 24px;
                                 border-radius: 3px;
+                                transition: all .2s ease-in-out;
+                                border: solid 2px #fff;
+
+                                &:hover {
+                                    background-color: #dc7882;
+                                    color: #FFFFFF;
+                                }
                             }
                         }
                     }
                 }
 
                 .social-icons {
+
                     a {
+
                         img {
                             width: 30px;
                             height: 30px;
+                            transition: all .2s ease-in-out;
+
+                            &:hover {
+                                animation: zoom-in-zoom-out 1s ease;
+                            }
                         }
 
                         &:not(:last-child) {
                             padding-right: 10px;
+                        }
+                    }
+
+                    @keyframes zoom-in-zoom-out {
+                        0% {
+                            transform: scale(1, 1);
+                        }
+                        50% {
+                            transform: scale(1.2, 1.2);
+                        }
+                        100% {
+                            transform: scale(1, 1);
                         }
                     }
                 }

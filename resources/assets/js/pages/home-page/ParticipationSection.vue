@@ -8,7 +8,7 @@
                     met Europese erkenning. Met behulp van dit model helpen wij vrouwen zichzelf te ontwikkelen.
                     Stijgen op de ladder, dus persoonlijke groei, staat hierbij centraal.
                 </p>
-                <a>Lees meer</a>
+                <a href="">Lees meer</a>
             </div>
 
             <div class="ladder-image">
@@ -63,13 +63,21 @@ export default {
                     font-size: 16px;
                     padding: 15px 30px;
                     border-radius: 4px;
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        background-color: #eaeaea;
+                        color: #AE5D65;
+                    }
                 }
+
                 @media only screen and (max-width: 985px) {
                     margin-top: 0;
                 }
             }
 
             .ladder-image {
+
                 img {
                     height: auto;
                     width: 500px;
@@ -82,6 +90,7 @@ export default {
                 }
             }
         }
+
         @media only screen and (max-width: 767px) {
             display: none;
         }

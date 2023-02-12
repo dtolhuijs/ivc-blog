@@ -11,7 +11,7 @@
                             inzetten om anderen te helpen én je jouw kwaliteiten verder kunt ontwikkelen. Word vrijwilliger
                             en draag bij aan de empowerment van vrouwen!
                         </p>
-                        <a class="learn-more">Lees verder</a>
+                        <a class="learn-more" href="">Lees verder</a>
                     </div>
                 </div>
             </div>
@@ -77,6 +77,7 @@ export default {
                         margin-top: 0.5rem;
                         margin-bottom: 1rem;
                     }
+
                     p.form-text {
                         color: #000000;
                         font-family: "Public Sans", Sans-serif;
@@ -97,10 +98,16 @@ export default {
                         text-align: center;
                         -webkit-transition: all .3s;
                         -o-transition: all .3s;
-                        transition: all .3s;
+                        border: solid 2px #AE5D65;
+                        transition: all .2s ease-in-out;
+
+                        &:hover {
+                            background-color: #bc848a;
+                        }
                     }
 
                     .form-fields {
+                        
                         input {
                             width: 100%;
                             max-width: 100%;
@@ -126,6 +133,12 @@ export default {
                             font-size: 15px;
                             padding: 12px 24px;
                             border-radius: 3px;
+                            border: solid 2px #AE5D65;
+                            transition: all .2s ease-in-out;
+
+                            &:hover {
+                                background-color: #bc848a;
+                            }
                         }
                     }
                 }

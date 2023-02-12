@@ -66,6 +66,7 @@ export default {
         background-color: #AE5D65;
         border: solid 2px #AE5D65;
         padding: 10px 20px;
+        transition: all .2s ease-in-out;
 
         &:hover {
             background-color: #fff;

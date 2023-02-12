@@ -111,6 +111,7 @@ export default {
                         height: 300px;
                         object-fit: cover;
                     }
+
                     .card-title {
                         position: absolute;
                         width: 80%;
@@ -120,12 +121,32 @@ export default {
                         padding: 15px 15px 5px 15px;
                         background-color: #fff;
                         opacity: .8;
+                        transition: all .2s ease-in-out;
+
+                        &:hover {
+                            box-shadow: 2px 2px 2px 1px rgba(47, 47, 47, 0.2);
+                            animation: zoom-in-zoom-out 1s ease;
+                        }
+                    }
+
+                    @keyframes zoom-in-zoom-out {
+                        0% {
+                            transform: scale(1, 1);
+                        }
+                        50% {
+                            transform: scale(1.1, 1.1);
+                        }
+                        100% {
+                            transform: scale(1, 1);
+                        }
                     }
                 }
             }
+
             @media only screen and (max-width: 800px) {
                 flex-wrap: wrap;
             }
+
             @media only screen and (max-width: 1166px) {
                 padding-left: 12px;
                 padding-right: 12px;
@@ -141,6 +162,13 @@ export default {
                 font-size: 16px;
                 color: #fff;
                 border-radius: 4px;
+                border: solid 2px #AE5D65;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #AE5D65;
+                }
             }
         }
     }
