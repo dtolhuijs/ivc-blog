@@ -20,8 +20,8 @@
                 </div>
 
                 <div class="middle-column column">
-                    <a href="">Home</a><br><br>
-                    <a href="">Wie zijn wij</a><br><br>
+                    <a href="/">Home</a><br><br>
+                    <a href="/wie-zijn-wij">Wie zijn wij</a><br><br>
                     <a href="">Activiteiten</a><br><br>
                     <a href="">Actueel</a><br><br>
                     <a href="">Contact</a><br><br>
