@@ -53,11 +53,11 @@ export default {
         return {
             dropdownItems: [
                 {
-                    href: '#' ,
+                    href: '/wie-zijn-wij' ,
                     label: 'Over het IVC'
                 },
                 {
-                    href: '#' ,
+                    href: '/bestuur-en-directie' ,
                     label: 'Bestuur een directie'
                 },
                 {

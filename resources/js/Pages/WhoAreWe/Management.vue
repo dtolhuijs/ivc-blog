@@ -11,7 +11,7 @@
                         Hoofdtaken van het bestuur zijn o.a. het vaststellen van inhoudelijk en financieel beleid en het
                         controleren van de dagelijkse leiding.
                     </p>
-                    <a href="">Meer informatie</a>
+                    <a href="/bestuur-en-directie">Meer informatie</a>
                 </div>
 
                 <div class="column image">
