@@ -4,20 +4,28 @@
 
         <banner/>
         <goal/>
+        <video-section/>
+        <mission/>
         <participation-section/>
+        <management/>
         <slide-show-section/>
+
         <footer-section/>
     </section>
 </template>
 
 <script>
-import HeaderSection from "../Components/HeaderSection.vue";
-import FooterSection from "../Components/Footer.vue";
-import NavBar from "../Components/NavBar.vue";
-import Banner from "./WhoAreWe/Banner.vue";
 import Goal from "./WhoAreWe/Goal.vue";
-import ParticipationSection from "./HomePage/ParticipationSection.vue";
+import Banner from "./WhoAreWe/Banner.vue";
+import Mission from "./WhoAreWe/Mission.vue";
+import NavBar from "../Components/NavBar.vue";
+import Management from "./WhoAreWe/Management.vue";
+import VideoSection from "./WhoAreWe/VideoSection.vue";
+import FooterSection from "../Components/Footer.vue";
+import HeaderSection from "../Components/HeaderSection.vue";
 import SlideShowSection from "./HomePage/SlideShowSection.vue";
+import ParticipationSection from "./HomePage/ParticipationSection.vue";
+
 export default {
     name: "WhoAreWe",
 
@@ -25,10 +33,13 @@ export default {
         Goal,
         Banner,
         NavBar,
-        FooterSection,
+        Mission,
+        Management,
+        VideoSection,
         HeaderSection,
-        ParticipationSection,
-        SlideShowSection
+        FooterSection,
+        SlideShowSection,
+        ParticipationSection
     }
 }
 </script>
