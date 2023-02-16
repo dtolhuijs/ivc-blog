@@ -61,7 +61,7 @@ export default {
                     label: 'Bestuur een directie'
                 },
                 {
-                    href: '#' ,
+                    href: '/projecten' ,
                     label: 'Projecten'
                 },
                 {

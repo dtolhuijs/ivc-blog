@@ -17,3 +17,4 @@ use Inertia\Inertia;
 Route::get('/', static fn() => Inertia::render('HomePage'));
 Route::get('/wie-zijn-wij', static fn() => Inertia::render('WhoAreWe'));
 Route::get('/bestuur-en-directie', static fn() => Inertia::render('Organization'));
+Route::get('/projecten', static fn() => Inertia::render('Projects'));
