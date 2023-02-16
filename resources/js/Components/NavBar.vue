@@ -65,7 +65,7 @@ export default {
                     label: 'Projecten'
                 },
                 {
-                    href: '#' ,
+                    href: '/vacatures' ,
                     label: 'Vacatures'
                 },
                 {
