@@ -3,7 +3,7 @@
 
     <nav class="px-2 py-4 fixed ">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
-            <a href="https://ivcdenhelder.nl/" class="flex items-center">
+            <a href="#" class="flex items-center">
                 <img src="../../images/ivc_logo_roze2.gif" class="h-14 mr-3" alt="IVC Logo" />
             </a>
             <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-dropdown" aria-expanded="false">
@@ -23,7 +23,7 @@
                         <dropdown :items="dropdownItems"/>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pl-3 pr-4 md:border-0 md:p-0">Activiteiten</a>
+                        <a href="/activiteiten" class="block py-2 pl-3 pr-4 md:border-0 md:p-0">Activiteiten</a>
                     </li>
                     <li>
                         <a href="#" class="block py-2 pl-3 pr-4 md:border-0 md:p-0">Actueel</a>
